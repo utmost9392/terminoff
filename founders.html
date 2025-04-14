@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Терминофф </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/res/icons/favicon.ico">
+    </head>
+    <body>
+        <div id="blurOverlay"></div>
+        <!-- Создаем контейнер для шапки-бокового меню-контента -->
+        <div class="grid-container2"> 
+            
+            <!-- Шапка -->
+            <div class="header">
+                <button id="tomain" type="submit" formaction="index.html"> На главную </button>
+                <button type="submit" formaction="index.html"> Терминофф </button>
+                <div class="header-title">Разработчики</div>
+                <button id="themeToggle2"> <img src="res/icons/changeTheme.ico" alt="Переключить тему" class="theme-icon"> </button> <!-- Кнопка переключения темы -->
+                <button id="todev" type="submit" formaction="founders.html"> Разработчики </button>
+            </div>
+
+            <!-- Контейнер для разработчиков -->
+            <div class="content2">
+
+                <a href="https://vk.com/andrey.n.vyatkin" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="dev-card">
+                    
+                    <img src="res/icons/viatkin.jpg" alt="Имя разработчика" class="dev-photo" title="Открыть ВК">
+                    
+                    <div class="dev-info">
+                        <h3 class="dev-name">Вяткин Андрей</h3>
+                        <p class="dev-role"> Разработка структуры сайта, работа с HTML, JavaScript </p>
+                    </div>
+                </a>
+
+                <a href="https://vk.com/gusb1" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="dev-card">
+                    
+                    <img src="res/icons/kotlyarov.jpg" alt="Имя разработчика" class="dev-photo" title="Открыть ВК">
+                    
+                    <div class="dev-info">
+                        <h3 class="dev-name"> Котляров Максим </h3>
+                        <p class="dev-role"> Стилизация сайта, работа с CSS и Adobe Photoshop </p>
+                    </div>
+                </a>
+
+
+                <a href="https://vk.com/ltachi.uchlha" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="dev-card">
+                    
+                    <img src="res/icons/pirumyan.jpg" alt="Имя разработчика" class="dev-photo" title="Открыть ВК">
+                    
+                    <div class="dev-info">
+                        <h3 class="dev-name"> Пирумян Дмитрий </h3>
+                        <p class="dev-role"> Поиск информации из открытых источников, создание базы даных </p>
+                    </div>
+                </a>
+
+
+                <a href="https://vk.com/radiantsmith" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        class="dev-card">
+                    
+                    <img src="res/icons/frolov.jpg" alt="Имя разработчика" class="dev-photo" title="Открыть ВК">
+                    
+                    <div class="dev-info">
+                        <h3 class="dev-name"> Фролов Александр </h3>
+                        <p class="dev-role"> Структурирование информации, создание базы данных </p>
+                    </div>
+                </a>
+
+                <div class="centered-images">
+                    <a  href="https://sfedu.ru/"
+                        target="_blank" 
+                        rel="noopener noreferrer"> 
+                        <img src="res/icons/sfedu.png" class="logos" title="Открыть сайт ЮФУ">
+                    </a>
+
+                    <a  href="https://ivtipt.ru/"
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                        <img src="res/icons/fvt.png"  class="logos" title="Открыть сайт ИВТиПТ">
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- Подвал сайта -->
+            <div class="footer"> 
+                <h3> Предложения по продвижению сайта <span> viatkin@sfedu.ru </span> </h3>
+            </div>
+
+        </div>
+
+        <button id="scrollToTopBtn" class="scrollToTopBtn">Наверх</button>
+
+        <div class="transparent"></div>
+
+        <!-- Подключаем скрипт -->
+        <script src="script.js"> </script>
+        
+    </body>
+</html>

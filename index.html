@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title> Терминофф </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="/res/icons/favicon.ico">
+    </head>
+    <body>
+
+        <!-- мыло -->
+        <div id="blurOverlay"></div>
+
+        <!-- контейнер для шапки-бокового меню-контента -->
+        <div class="grid-container"> 
+            
+            <!-- Шапка -->
+            <div class="header">
+                <button type="submit" formaction="index.html" id="logo"> Терминофф </button>
+                <form id="search"> <input type="text" id="searchInput" placeholder="Поиск термина..."> </form>
+                <button id="themeToggle"> <img src="res/icons/changeTheme.ico" alt="Переключить тему" class="theme-icon"> </button> <!-- Кнопка переключения темы -->
+                <button id="dev" type="submit" formaction="founders.html"> Разработчики </button>
+                <div class="burger-container">
+                    <button id="burgerBtn" aria-label="Открыть меню">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </button>
+                
+                    <div id="burgerMenu" class="burger-menu">
+                        <button id="goHome">Главная</button>
+                        <button id="goFounders">Разработчики</button>
+                        <button id="toggleTheme">Смена темы</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Боковое меню -->
+            <div class="sidebar">
+                <h3>Топ</h3>
+                <div id="topTerms" class="top-terms"></div>
+            </div>
+
+            <!-- Предисловие -->
+            <div class="title">
+                <h3 id="introTitle"></h3>
+                <p id="introContent"></p>
+
+                <!-- Доступное кол-во терминов -->
+                <div class="termCol">
+                    <h3 id="categoryTitle"></h3>
+                    <span id="visibleCount">0</span>
+                </div>
+
+                <!-- Фильтр -->
+                <div id="alphabetFilter"> 
+                    <button id="resetFilterButton" class="reset-button">Сбросить фильтр</button>
+                </div>
+            </div>
+
+            <!-- Контейнер для кнопок с терминами -->
+            <div class="content">
+                <div id="buttonsContainer"></div>
+
+                <!-- Окошко с определением -->
+                <div id="definitionModal" class="modal">
+                    <div class="modal-content">
+                        <p id="definitionText"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Подвал сайта -->
+            <div class="footer"> 
+                <h3> Предложения по продвижению сайта <span> viatkin@sfedu.ru </span> </h3>
+            </div>
+
+        </div>
+
+        <!-- Кнопка "Наверх" -->
+        <button id="scrollToTopBtn" class="scrollToTopBtn">Наверх</button>
+
+        <script src="script.js"> </script>
+    </body>
+</html>
