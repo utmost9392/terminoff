@@ -475,7 +475,7 @@ button.filter-button {
     content: '';
     flex: 1;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: var(--text-A-color);
     max-width: 200px;
 }
 
